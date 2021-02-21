@@ -80,6 +80,13 @@
   margin-top: 3rem;
 }
 
+.postsList{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%
+}
+
 .card {
   margin: 1rem;
   flex-basis: 45%;
