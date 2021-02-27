@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import {getSortedPosts} from '../lib/posts'
 
-export function getStaticProps() {
+export async function getStaticProps() {
   const postsList = getSortedPosts()
   return {
     props: {
@@ -34,10 +34,6 @@ export default function Home({postsList}) {
           ))}
         </ul>
       </main>
-
-      <footer className={styles.footer}>
-        <p></p>
-      </footer>
     </div>
   )
 }

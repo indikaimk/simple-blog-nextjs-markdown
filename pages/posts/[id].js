@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import {getAllPostIds, getPostData} from '../../lib/posts'
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
     const paths = getAllPostIds()
     return{
         paths,
